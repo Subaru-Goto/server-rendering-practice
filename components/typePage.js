@@ -2,7 +2,7 @@ import { pets } from "../petList.js";
 import { divStyle, anchorStyle, pStyle, listStyle } from "../styles/index.js";
 
 export const typePage = (pet_type) => {
-  const listElement = pets[pet_type].map(pet => {
+  const listElement = pets[pet_type].map((pet, index) => {
     const { name, url } = pet;
      return `
       <div>
@@ -10,7 +10,7 @@ export const typePage = (pet_type) => {
           <li>
             <a
               style="${anchorStyle}" 
-              href="/animals/${pet_type}/${name}">
+              href="/animals/${pet_type}/${index}">
               ${name}
             </a>
           </li>
