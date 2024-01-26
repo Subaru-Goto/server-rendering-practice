@@ -1,4 +1,4 @@
-# Server Rendering Practice
+# Server Side Rendering Practice
 
 This project is a practice exercise for server-side rendering in Node.js using Express. It demonstrates the basic concepts of server-side rendering, routing, and handling HTTP requests.
 
