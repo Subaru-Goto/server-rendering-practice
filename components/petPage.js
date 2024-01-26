@@ -2,10 +2,9 @@ import { pets } from "../petList.js";
 import { divStyle, anchorStyle, pStyle, listStyle } from "../styles/index.js";
 
 export const petPage = (pet_type, pet_id) => {
-  console.log(pet_type)
-  console.log(pet_id)
   const findPet = pets[pet_type].find(pet => pet.name === pet_id);
   const { name, url, age, breed, description } = findPet;
+  
   return (
     `
     <div style="${divStyle}">
